@@ -4,7 +4,7 @@
 
 **Trình quản lý cấu hình API provider tập trung cho các công cụ AI CLI và IDE**
 
-Đọc và ghi config trực tiếp trên máy, tự động sao lưu trước khi sửa, khóa API lưu hoàn toàn cục bộ.
+Đọc và ghi config trực tiếp trên máy, tự động sao lưu trước khi sửa, API lưu hoàn toàn nội bộ.
 
 ![Platform](https://img.shields.io/badge/platform-Windows-0A84FF)
 ![Electron](https://img.shields.io/badge/Electron-33.x-47848F)
