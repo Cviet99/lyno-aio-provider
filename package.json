@@ -1,0 +1,44 @@
+{
+  "name": "lyno-aio-provider-assistant",
+  "version": "0.1.0",
+  "description": "Lyno AIO Provider Assistant - quan ly API providers cho cac AI IDE/CLI",
+  "main": "src/main.js",
+  "author": "Lyno",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "gsap": "^3.13.0"
+  },
+  "build": {
+    "appId": "vn.lyno.aio-provider",
+    "productName": "Lyno AIO Provider Assistant",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build-assets/icon.ico",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false
+    }
+  }
+}

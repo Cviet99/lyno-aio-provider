@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+debug-renderer.log
+debug-main-stderr.log
+*.log
+.lyno-aio/
+test-require.js
+run-debug.bat
+debug-run.bat
+build-assets/make-icons.py
+build-assets/inspect-pti.js
